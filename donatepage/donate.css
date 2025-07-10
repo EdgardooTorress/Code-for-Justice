@@ -1,0 +1,22 @@
+body{
+    background-color: yellow;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 25rem 25rem 25rem; 
+    justify-items: center;
+    align-items: end;
+}
+
+.donate--img{
+    display: flex;
+    
+}
+
+.donate--cta{
+    display: flex;
+    text-align: left;
+    justify-content: right;
+}
