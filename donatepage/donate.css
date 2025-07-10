@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 25rem 25rem 25rem; 
+    justify-items: center;
+    align-items: end;
+    flex-direction: row;
+}
+
+.donate--img{
+    display: flex;
+    
+}
+
+/* .donate--cta{
+
+} */
