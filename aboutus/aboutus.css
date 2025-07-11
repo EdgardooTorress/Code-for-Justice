@@ -1,0 +1,38 @@
+* {
+    background-color: cyan;
+    margin: 0;
+    padding: 0;
+}
+
+.main_content {
+    background-color: lightcyan;
+    display: flex;
+    width: 100rem;
+    justify-content: middle;
+}
+
+/* .grouped_content {
+    
+} */
+
+#h1_aboutus {
+    display: flex;
+    width: 100rem;
+    justify-content: left;
+}
+
+#h2_mission {
+
+}
+
+#h3_why {
+
+}
+
+#h3_colon {
+
+}
+
+#h3_plan {
+
+}
