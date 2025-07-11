@@ -1,0 +1,148 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+html{
+  font-size: 62.5%;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+button {
+  border-radius: 30px;
+  background-color: black;
+  height: 4rem;
+  width: 12rem;
+}
+
+#content-btn {
+  text-decoration: none;
+  color: white;
+}
+
+.products {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "p-one p-two p-three p-four"
+    "p-five p-six p-seven p-eight ";
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+ 
+}
+img {
+  height: 15rem;
+  width: 15rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+  background-color: black;
+}
+
+#p-one {
+  padding: 1rem;
+  border: 1px black solid;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px black;
+}
+
+#p-two {
+  padding: 10px;
+  border: 1px black solid;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px black;
+}
+#p-three {
+  padding: 10px;
+  border: 1px black solid;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px black;
+}
+
+#p-four {
+  padding: 10px;
+  border: 1px black solid;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px black;
+}
+#p-five {
+  padding: 10px;
+  border: 1px black solid;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px black;
+}
+
+#p-six {
+  padding: 10px;
+  border: 1px black solid;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px black;
+}
+
+#p-seven {
+  padding: 10px;
+  border: 1px black solid;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px black;
+}
+
+#p-eight {
+  padding: 10px;
+  border: 1px black solid;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px black;
+}
+ @media (max-width: 72rem) {
+    html{
+        font-size:  56.25%;
+    }
+
+}
+
+@media (max-width: 50rem){
+    html{
+        font-size: 43.75%;
+    }
+    .products{
+      grid-template-areas: none;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 30rem){
+    html{
+        font-size: 31%;
+    }
+    .products{
+      grid-template-areas: none;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+      button{
+    height: 4rem;
+    width: 10em;
+     font-size: 1.5rem;
+
+}
+ 
+}
