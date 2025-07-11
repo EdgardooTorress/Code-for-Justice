@@ -11,17 +11,42 @@
 html{
   font-size: 62.5%;
 }
-.navbar {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4vh;
+    background-color: lightblue;
+} 
+
+li{
+    list-style: none;
 }
-button {
+
+.logo{
+    height: 2rem;
+
+}
+.family-container{
+    height: 60vh;
+}
+.family{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.involved{
+
+}
+
+/* button {
   border-radius: 30px;
   background-color: black;
   height: 4rem;
   width: 12rem;
-}
+} */
 
 #content-btn {
   text-decoration: none;
@@ -38,16 +63,21 @@ button {
     "p-five p-six p-seven p-eight ";
   grid-gap: 2rem;
   font-size: 1.5rem;
+  margin: 3rem;
  
 }
-img {
-  height: 15rem;
-  width: 15rem;
-}
+
 a {
   text-decoration: none;
   color: black;
-  background-color: black;
+ 
+}
+
+.grid-img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 #p-one {
@@ -80,40 +110,20 @@ a {
   border-radius: 10px;
   box-shadow: 10px 5px 5px black;
 }
-#p-five {
-  padding: 10px;
-  border: 1px black solid;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 10px 5px 5px black;
-}
 
-#p-six {
-  padding: 10px;
-  border: 1px black solid;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 10px 5px 5px black;
-}
 
-#p-seven {
-  padding: 10px;
-  border: 1px black solid;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 10px 5px 5px black;
-}
 
-#p-eight {
-  padding: 10px;
-  border: 1px black solid;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 10px 5px 5px black;
-}
- @media (max-width: 72rem) {
+
+
+
+
+
+ @media (max-width: 89rem) {
     html{
         font-size:  56.25%;
+    }
+    .family{
+        height: 30%;
     }
 
 }
@@ -129,19 +139,22 @@ a {
     }
 }
 
-@media (max-width: 30rem){
+@media (max-width: 28rem){
     html{
         font-size: 31%;
     }
     .products{
       grid-template-areas: none;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr ;
     }
-      button{
-    height: 4rem;
-    width: 10em;
-     font-size: 1.5rem;
+    .logo{
+        height: 0;
+    }
+    nav{
+        font-size: 3rem;
+    }
+  
 
 }
  
