@@ -4,7 +4,7 @@ const nameInput = document.getElementById("nameInput") //Pulls ID from the nameI
 
 donateButton.addEventListener('click', function() { //When button is clicked it will show the value from the user input
     console.log(nameInput.value);
-    // alert("Thank you for your contributions!!")
+    alert("Thank you for your contributions!!")
 })
 
 // nameInput.addEventListener('click', function() {
