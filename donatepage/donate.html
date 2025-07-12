@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate</title>
     <link href="donate.css" rel="stylesheet">
+<script src="donate.js" defer></script>
 </head>
 
 <header>
-    <nav>
-
+    <nav class="bluefwd-navbar">
+        <ul>
+            <li>Mainpage</li>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Donate</li>
+            <li></li>
+        </ul>
     </nav>
 </header>
+
+
 <body>
     <main>
         <div class="container">
@@ -26,12 +35,25 @@
                         All funds are given to patients in regards to their hospital bills.
                     </p>
                 </div>
+                <div class="donation-info">
+                    <ul>
+                    <li><label>Name</label>
+                        <input type="text" id="nameInput" placeholder="John Doe"/> 
+                        <button class="donate-button" id="donateButton">Donate</button> </li>
+
+                    <li><label>Amount</label>
+                        <input type="tel" placeholder="Donation Amount" id="creditNumber"/>
+                        
+                        </li>
+                        
+                    </ul>
+                </div>
             </article>
         </div>
     </main>
 </body>
 
-<footer>
+<footer class="donate--footer">
     <p>
         Footer placeholder
     </p>
