@@ -4,18 +4,36 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 25rem 25rem 25rem; 
-    justify-items: center;
-    align-items: end;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 19rem 26rem 26rem 19rem; 
+    grid-template-areas:"header header header header"
+                        ". side main main"
+                        ". . form form"
+                        "footer footer footer footer";
 }
 
 .donate--img{
-    display: flex;
-    
+    grid-area: side;    
+    background-color: blueviolet;
 }
 
-/* .donate--cta{
+.donate--cta{
+    grid-area: main;
+    background-color: beige;
+}
 
-} */
+.donate--footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+.donate--button{
+    border-radius: 5rem;
+    /* height: 3rem; */
+    width: 100%;
+    grid-area: form;
+}
+
+ul{
+    list-style: none;
+}
