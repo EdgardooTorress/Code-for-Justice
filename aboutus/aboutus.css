@@ -1,38 +1,114 @@
 * {
-    background-color: cyan;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100vh;
+    background-color: #F5F5F5;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px black;
+    padding: 1rem 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    height: 6rem;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+li {
+    list-style: none;
+    border: 2px black solid;
+    height: 4rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+li:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.4);
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4rem;
+    color: black;
+    transition: color 0s ease-in-out ;
+}
+
+li:hover a {
+    color: white;
+}
+
+.h1_aboutus--heading {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    height: 1rem;
+}
+
+.grouped_content {
+    display: flex;
+    flex-direction: column;
+} 
 
 .main_content {
-    background-color: lightcyan;
     display: flex;
-    width: 100rem;
-    justify-content: middle;
-}
-
-/* .grouped_content {
-    
-} */
-
-#h1_aboutus {
-    display: flex;
-    width: 100rem;
-    justify-content: left;
+    flex-direction: column;
+    margin: 1rem;
 }
 
 #h2_mission {
-
+    text-align: left;
+    margin: 1rem;
+    height: 1rem;
 }
 
 #h3_why {
-
+    text-align: right;
+    margin: 1rem;
+    height: 1rem;
 }
 
-#h3_colon {
-
+#h3_help {
+    text-align: right;
+    margin: 1rem;
+    height: 1rem;
 }
 
 #h3_plan {
-
+    text-align: left;
+    margin: 1rem;
+    height: 1rem;
 }
