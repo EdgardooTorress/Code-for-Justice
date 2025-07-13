@@ -130,19 +130,30 @@ h3{
     grid-template-columns: repeat(2, 1fr);
     padding: 4rem 0;
     grid-gap: 3rem;
-    margin: 4rem 0;
-    grid-template-areas: 
-            "goal"
-            "goal1"
-            "goal2"
-            "accomplishes";
-
+}
+.grid-main1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem 0;
+    grid-gap: 3rem;
 }
 
-#goal{
-    grid-area: goal;
+#goals{
+ text-align: center;
 }
 
+#goals h3{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#accomplishment{
+    text-align: center;
+}
+#accomplishment h3{
+    font-size: 5rem;
+    font-weight: bold;
+}
 
 
 .grid-container{
@@ -161,13 +172,31 @@ h3{
     box-shadow: 1px 3px 7px 5px red;
 }
 
-h5{
-    font-size: 1.8rem;
+.grid-container1{
+  padding: 2rem;
+  border: 2px black solid;
+  background-color: white;
+  border-radius: 10px;
+  height: auto;
+  min-height: 25rem;
+  box-shadow: 1px 1px 10px 2px ;
+  transition: transform 0.8s ease-in-out, box-shawdow 1s ease-in-out;
+}
+
+.grid-container1:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 3px 7px 5px red;
+}
+
+
+
+h4{
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
     font-weight: bold;
 }
 p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: darkslategrey;
 }
 .donate{
@@ -230,15 +259,28 @@ footer p{
     html{
         font-size: 43.75;
     }
+
     .grid-main{
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-            "goal"
-            "goal1"
-            "goal2"
-            "accomplishes";
-    #acomplishes{
-    grid-area: accomplishes;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 4rem 0;
+    grid-gap: 3rem;
+}
+.grid-main1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 4rem 0;
+    grid-gap: 3rem;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+     header{
+      height: 23rem;
     }
+
 
 }
