@@ -185,7 +185,6 @@ button{
     width: 25rem;
     background-color: red;
     border-radius: 10px;
-    /* border: none; */
     transition: transform 1s ease-in-out;
     cursor: pointer;
 

@@ -94,42 +94,67 @@ main{
   margin: 0 auto;
 
 }
-h1{
-  font-size: 4rem;
-  text-align: center;
-}
 
-.family-container p{
+
+.family-container {
   font-size: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+}
+.involved{
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 2rem;
+
 }
 
- button {
-  border-radius: 30px;
-  background-color: black;
-  height: 4rem;
-  width: 12rem;
-} */
-
-#content-btn {
-  text-decoration: none;
-  color: white;
+.involved h1{
+   color: black;
+    text-align: center;
+    font-size: 5rem;
+    margin: 4rem 0;
+    font-weight: bold;
+}
+.involved p{
+  text-align: center;
+  font-size: 2.7rem;
 }
 
-.products {
-  margin: 1rem;
+button{
+    height: 8rem;
+    width: 25rem;
+    background-color: red;
+    border-radius: 10px;
+    transition: transform 1s ease-in-out, box-shawdow 1s ease-in-out;
+    cursor: pointer;
+    margin: 4rem 0;
+    align-self: center;
+
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px 3px ;
+    
+}
+button a{
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+
+.services {
   display: grid;
-      grid-template-areas: none;
-      grid-template-columns: 1fr ;
-      grid-template-rows: 1fr ;
-      grid-template-areas:
-      "p-one"
-      "p-two";
-      grid-gap: 3rem;
-      font-size: 1.5rem;
-      margin: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 4rem 0;
+    grid-gap: 3rem;
+    margin: 4rem 0;
       
  
 }
@@ -141,52 +166,51 @@ a {
 }
 
 .grid-img{
-    height: 70%;
+    height: auto;
     width: 100%;
     object-fit: cover;
-    border-radius: 10px;
-}
-h3{
-  font-size: 3rem;
-  text-align: center;
-}
-p{
-  font-size: 3rem;
+    border-radius: 5px;
 }
 
-#p-one {
+
+.events {
   padding: 1rem;
   border: 1px black solid;
   background-color: white;
   border-radius: 10px;
   box-shadow: 10px 5px 5px black;
+  transition: transform 1seg ease-in-out;
 }
 
-#p-two {
-  padding: 10px;
-  border: 1px black solid;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 10px 5px 5px black;
-}
-#p-three {
-  padding: 10px;
-  border: 1px black solid;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 10px 5px 5px black;
+.events h3{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+
 }
 
-#p-four {
-  padding: 10px;
-  border: 1px black solid;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 10px 5px 5px black;
+.events p{
+  font-size: 1.5rem;
+  color: #333;
+
+}
+.events:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    background-color: #333;
+    margin-top: auto;
+    
+}
 
-
-
- 
+footer p{
+    color: white;
+    font-size: 1.5rem;
+}
