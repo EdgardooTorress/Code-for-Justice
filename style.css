@@ -131,8 +131,18 @@ h3{
     padding: 4rem 0;
     grid-gap: 3rem;
     margin: 4rem 0;
+    grid-template-areas: 
+            "goal"
+            "goal1"
+            "goal2"
+            "accomplishes";
 
 }
+
+#goal{
+    grid-area: goal;
+}
+
 
 
 .grid-container{
@@ -207,5 +217,29 @@ footer{
 footer p{
     color: white;
     font-size: 1.5rem;
-    
+
+}
+
+@media (max-width: 768px){
+
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 480px){
+    html{
+        font-size: 43.75;
+    }
+    .grid-main{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+            "goal"
+            "goal1"
+            "goal2"
+            "accomplishes";
+    #acomplishes{
+    grid-area: accomplishes;
+    }
+
 }
