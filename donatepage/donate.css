@@ -11,7 +11,7 @@ html{
   font-size: 62.5%;
 }
 
- header{
+header{
     background-color: white;
     box-shadow: 0 2px 5px black;
     padding: 1rem 0;
@@ -29,7 +29,7 @@ html{
     padding: 0 2rem;
 }
 
-.li--navbar{
+.li-navbar{
     list-style: none;
     border: 2px black solid;
     height: 4rem;
@@ -41,7 +41,7 @@ html{
     border-radius: 10px;
     transition: all 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
-.li--navbar:hover {
+.li-navbar:hover {
     background-color: black;
     color: white;
     transform: scale(1.4);
@@ -57,19 +57,47 @@ li:hover a{
     color: white;
 }
 
+button{
+    height: 8rem;
+    width: 25rem;
+    background-color: red;
+    border-radius: 10px;
+    transition: transform 1s ease-in-out, box-shawdow 1s ease-in-out;
+    cursor: pointer;
+    margin: 4rem 0;
+    align-self: center;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    background-color: #333;
+    margin-top: auto;
+}
+.donate-here{
+    background-color: rgba(221, 229, 229,0.5);
+    grid-area: header;
+    text-align: center;
+    align-items: center;
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 19rem 26rem 26rem 19rem; 
+    grid-template-rows: repeat(4,1fr); 
     grid-template-areas:"header header header header"
-                        ". side main main"
+                        "side side main main"
                         ". . form form"
                         "footer footer footer footer";
 }
 
-.donate--img{
-    grid-area: side;    
-    background-color: blueviolet;
+.img--donate{
+    grid-row: 2/ 3;
+    grid-column: 1/2; /*Come back to this trying to fit the image within a 4 block area*/
+    width: 100%;
+    max-height: 100%;
 }
 
 .donate--cta{
