@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate</title>
     <link href="donate.css" rel="stylesheet">
-<script src="donate.js" defer></script>
+    <script defer src="donate.js"></script>
 </head>
 
 <header>
@@ -20,15 +20,14 @@
         <li class="li-navbar"><a href="getinvolved/getinvolved.html">Get involve</a></li>
     </ul>
     </nav>
-  </header>
+</header>
 
 
 <body>
     <main>
         <div class="container">
-            <div class="donate--img">
+            <h1 class="donate-here">Donate Here</h1>
                 <img src="/donatepage/cancerdonation.jpg" class="img--donate">
-            </div>
             <article class="donate--cta">
                 <h1>Donate Here Test</h1>
                 <div>
@@ -38,26 +37,33 @@
                     </p>
                 </div>
                 <div class="donation-info">
-                    <ul>
-                    <li><label>Name</label>
-                        <input type="text" id="nameInput" placeholder="John Doe"/> 
-                        <button class="donate-button" id="donateButton">Donate</button> </li>
+                <div id="error"> </div>
+                    <form action="/" method="get" id="form">
+                        <div class="donation-info">
+                                <div>
+                                    <label">Name</label>
+                                    <input type="text" id="nameInput" name="name" placeholder="John Doe"/> 
+                                </div>
+                                    <label>Card Information</label>
+                                    <input type="tel" placeholder="Card Information" id="cardInfo"/>
 
-                    <li><label>Amount</label>
-                        <input type="tel" placeholder="Donation Amount" id="creditNumber"/>
-                        
-                        </li>
-                        
-                    </ul>
-                </div>
+                                    <input type="number" placeholder="MM/YY" id="expDate"/>
+                                <div>
+                                    <label>Amount</label>
+                                    <input type="number" placeholder="1.00" id="donateAmount"/>
+                                </div>
+                        </div>
+                        <button class="donate-button" id="donateButton">Donate</button>
+
+                    </form>
             </article>
         </div>
     </main>
 </body>
 
 <footer class="donate--footer">
-    <p>
-        Footer placeholder
-    </p>
+    <footer>
+    <p>© Copyright 2025. CheckUp For All, a not-for-profit.</p>
+</footer>
 </footer>
 </html>
