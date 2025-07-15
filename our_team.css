@@ -105,12 +105,10 @@ li:hover a{
 }
 
 main{
-    
     justify-content: center;
     align-items: center;
     background: #f8f8f8;
 }
-
 
 .wrapper .title{
     text-align: center;
@@ -122,8 +120,7 @@ main{
     color: black;
     font-size: 5rem;
     font-weight: 500;
-    text-shadow: 1px 1px 2px rgb(170, 44, 101); 
-    
+    text-shadow: 1px 1px 2px rgb(170, 44, 101);    
 }
 .wrapper .card_container{
     position: relative;
