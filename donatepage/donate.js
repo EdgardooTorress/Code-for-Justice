@@ -4,6 +4,7 @@ const cardInfo = document.getElementById("cardInfo")
 const form = document.getElementById("form")
 const errorText = document.getElementById("error")
 const donateAmount = document.getElementById("donateAmount")
+const expDate = document.getElementById('expDate')
 // Add quotes to paraphsis to have it look up the string. Idenfifies button//
 
 donateButton.addEventListener('click', function() { //When button is clicked it will show the value from the user input
@@ -21,9 +22,15 @@ form.addEventListener('submit', (e) => {        //Listens for when the form is s
         messages.push('Must be a 16 digits card value')
     }
 
+    if(expDate.value == 0){
+            messages.push('Please Enter a valid date')
+        }
+        
     if(donateAmount.value == 0) {
         messages.push('Please enter a amount above 0')
     }
+
+    
     
     if (messages.length > 0) {
         e.preventDefault()
