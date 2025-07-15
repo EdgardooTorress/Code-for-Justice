@@ -21,7 +21,8 @@ html{
     background-color: white;
     box-shadow: 0 2px 5px black;
     padding: 1rem 0;
-}
+ }
+
 ul{
     display: flex;
     justify-content: space-around;
@@ -46,7 +47,6 @@ ul{
     transition: all 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 li:hover {
-    background-color: black;
     color: white;
     transform: scale(1.4);
 }
