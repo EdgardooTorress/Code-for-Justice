@@ -5,35 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate</title>
     <link href="donate.css" rel="stylesheet">
+    <script defer src="donate.js"></script>
 </head>
 
 <header>
     <nav>
-
+    <ul class="ul-navbar">
+        <div>
+        <img class="logo" src="logo.png" alt="">
+        </div>
+        <li class="li-navbar"><a href="">Contact us</a></li>
+        <li class="li-navbar"><a href="">Donate</a></li>
+        <li class="li-navbar"><a href="">Our Team</a></li>
+        <li class="li-navbar"><a href="getinvolved/getinvolved.html">Get involved</a></li>
+    </ul>
     </nav>
 </header>
+
+
 <body>
     <main>
         <div class="container">
-            <div class="donate--img">
-                <img src="/donatepage/cancerdonation.jpg" class="img--donate">
-            </div>
+            <h1 class="donate-here">Every Dollar Goes to a Patient in Need</h1>
+            <img src="doctor.webp" class="img--donate">
+            <img src="healthcare.webp" class="img--donate-below"/>
+            <img src="logo.png" class="donate--logo"/>
             <article class="donate--cta">
-                <h1>Donate Here Test</h1>
+                <h1>Donate Here</h1>
                 <div>
                     <p>
                         Help us give back to the many people who are suffereing during their journey. 
-                        All funds are given to patients in regards to their hospital bills.
+                        All funds are given to patients in regards to their hospital bills. As a company
+                        we want to bring a sense of comfort within our community.
                     </p>
+                </div>
+                <div class="donation-info">
+                <div id="error" class="error"> </div>
+                    <form action="/" method="get" id="form">
+                        <div class="donation--info">
+                                <div>
+                                    <label>Name</label>
+                                    <input type="text" id="nameInput" class="first-name" name="name" placeholder="John"/>
+                                </div>
+                                    <label>Card Information</label>
+                                    <input type="tel" placeholder="Card Information" id="cardInfo"/>
+                                    <input type="month" placeholder="MM/YYYY" id="expDate"/>
+                                <div>
+                                    <label>Amount</label>
+                                    <input type="number" placeholder="$1.00" id="donateAmount"/>
+                                </div>
+                        </div>
+                        <button class="donate--button" id="donateButton">Donate</button>
+                    </form>
                 </div>
             </article>
         </div>
     </main>
 </body>
 
-<footer>
-    <p>
-        Footer placeholder
-    </p>
+<footer class="donate--footer">
+    <footer>
+    <p>© Copyright 2025. CheckUp For All, a not-for-profit.</p>
+</footer>
 </footer>
 </html>

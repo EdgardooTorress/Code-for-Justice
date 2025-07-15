@@ -1,21 +1,256 @@
-body{
-    background-color: rgb(255, 255, 255);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 25rem 25rem 25rem; 
-    justify-items: center;
-    align-items: end;
-    flex-direction: row;
+html {
+    font-family: raleway;
 }
 
-.donate--img{
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px black;
+    padding: 1rem 0;
+}
+
+.ul-navbar {
     display: flex;
-    
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    height: 6rem;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-/* .donate--cta{
+.li-navbar {
+    list-style: none;
+    border: 2px black solid;
+    height: 4rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
 
-} */
+.li-navbar:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.4);
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4rem;
+    color: black;
+    transition: color 0s ease-in-out;
+}
+
+li:hover a {
+    color: white;
+}
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    background-color: #333;
+    margin-top: auto;
+}
+
+.donate-here {
+    grid-area: header;
+    text-align: center;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+
+
+.donate--logo {
+    grid-area: logo;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+
+
+#error {
+    color: red;
+}
+
+
+
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px 3px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    height: 4rem;
+    width: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.6) rotate(360deg);
+
+}
+
+
+.logo--header {
+    background-image: url(logo.png);
+    grid-area: logo;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "logo header header header"
+        "img  img imgtwo imgtwo"
+        "main main main main";
+
+}
+
+
+.img--donate {
+    grid-area: img;
+    object-fit: contain;
+    max-width: 100%;
+    border: black solid 1px;
+}
+
+.img--donate-below {
+    grid-area: imgtwo;
+    object-fit: contain;
+    max-width: 100%;
+    border: black solid 1px;
+
+}
+
+.donate--cta {
+    font-size: 1rem;
+    text-align: center;
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(0, 0, 0) 1px;
+}
+
+.error {
+    color: red;
+}
+
+
+
+.donate--button {
+    border-radius: 5rem;
+    /* height: 3rem; */
+    height: 1rem;
+    width: 4rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: transform 1s ease-in-out, box-shawdow 1s ease-in-out;
+    cursor: pointer;
+    margin: .1rem 0;
+    align-self: center;
+}
+
+.donate--logo {
+    grid-area: logo;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+    .img--donate {
+        grid-area: img;
+        object-fit: contain;
+        max-width: 100%;
+        border: black solid 1px;
+        box-shadow: 20px 8px 20px 10px;
+    }
+
+    .img--donate-below {
+        grid-area: imgtwo;
+        object-fit: contain;
+        max-width: 100%;
+        border: black solid 1px;
+        box-shadow: 20px 8px 20px 10px;
+    }
+
+    .container {
+        display: grid;
+        padding: 10px;
+        margin: 25px;
+        gap: 1rem 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "logo header header header"
+            "main main img imgtwo"
+            ". . . .";
+    }
+
+
+    .donate--button {
+        border-radius: 5rem;
+        /* height: 3rem; */
+        height: 3rem;
+        width: 12rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        transition: transform 1s ease-in-out, box-shawdow 1s ease-in-out;
+        cursor: pointer;
+        margin: 4rem 0;
+        align-self: center;
+    }
+
+    .donate--cta {
+        text-align: center;
+        grid-area: main;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+/* html{
+        font-size: 35%;
+    } */
+
+/* Leads to changes to the base element Don't set the whole document font size to rem*/
+
+
+/* Thinking fast and slow
+Atomics habits
+*/
