@@ -17,7 +17,7 @@
         <li class="li-navbar"><a href="">Contact us</a></li>
         <li class="li-navbar"><a href="">Donate</a></li>
         <li class="li-navbar"><a href="">Our Team</a></li>
-        <li class="li-navbar"><a href="getinvolved/getinvolved.html">Get involve</a></li>
+        <li class="li-navbar"><a href="getinvolved/getinvolved.html">Get involved</a></li>
     </ul>
     </nav>
 </header>
@@ -29,7 +29,7 @@
             <h1 class="donate-here">Every Dollar Goes to a Patient in Need</h1>
             <img src="doctor.webp" class="img--donate">
             <img src="healthcare.webp" class="img--donate-below"/>
-            <img src="banner.jpg" class="donate-here"/>
+            <img src="logo.png" class="donate--logo"/>
             <article class="donate--cta">
                 <h1>Donate Here</h1>
                 <div>
@@ -40,22 +40,19 @@
                     </p>
                 </div>
                 <div class="donation-info">
-                <div id="error"> </div>
+                <div id="error" class="error"> </div>
                     <form action="/" method="get" id="form">
                         <div class="donation--info">
                                 <div>
-                                    <label">First Name</label>
+                                    <label>Name</label>
                                     <input type="text" id="nameInput" class="first-name" name="name" placeholder="John"/>
-                                    
-                                    <label">Last Name</label>
-                                    <input type="text" id="nameInput" name="name" class="last-name" placeholder="Doe"/>
                                 </div>
                                     <label>Card Information</label>
                                     <input type="tel" placeholder="Card Information" id="cardInfo"/>
-                                    <input type="date" placeholder="MM/YYYY" id="expDate"/>
+                                    <input type="month" placeholder="MM/YYYY" id="expDate"/>
                                 <div>
                                     <label>Amount</label>
-                                    <input type="number" placeholder="1.00" id="donateAmount"/>
+                                    <input type="number" placeholder="$1.00" id="donateAmount"/>
                                 </div>
                         </div>
                         <button class="donate--button" id="donateButton">Donate</button>

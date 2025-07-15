@@ -7,18 +7,18 @@
     font-style: normal;
     box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
+
+html {
     font-family: raleway;
 }
 
-header{
+header {
     background-color: white;
     box-shadow: 0 2px 5px black;
     padding: 1rem 0;
 }
 
-.ul-navbar{
+.ul-navbar {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -30,7 +30,7 @@ header{
     padding: 0 2rem;
 }
 
-.li-navbar{
+.li-navbar {
     list-style: none;
     border: 2px black solid;
     height: 4rem;
@@ -42,25 +42,28 @@ header{
     border-radius: 10px;
     transition: all 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
+
 .li-navbar:hover {
     background-color: black;
     color: white;
     transform: scale(1.4);
 }
-a{
+
+a {
     text-decoration: none;
     text-align: center;
     font-size: 1.4rem;
     color: black;
-    transition: color 0s ease-in-out ;
+    transition: color 0s ease-in-out;
 }
-li:hover a{
+
+li:hover a {
     color: white;
 }
 
 
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,81 +71,44 @@ footer{
     background-color: #333;
     margin-top: auto;
 }
-.donate-here{
-    background-color: rgba(221, 229, 229, 0.5);
+
+.donate-here {
     grid-area: header;
     text-align: center;
-    border: solid rgb(238, 13, 13) 1px;
     max-height: 100%;
     background-repeat: no-repeat;
     align-self: center;
 }
 
-.container{
-    display: grid;
-    padding: 10px;
-    margin:25px;
-    gap: 1rem 1rem;
-    grid-template-columns: 1fr .5fr .5fr;
-    grid-template-rows: 17rem 28rem  10rem; 
-    grid-template-areas:"header header header"
-                        "main img imgtwo"
-                        ". . .";
-    border: solid black 1rem;
-    font-size: 2.1rem;
-}
 
 
-.img--donate{
-    grid-area: img;
+.donate--logo {
+    grid-area: logo;
+    max-width: 100%;
     object-fit: contain;
-    max-height: 100%;
-    border: black solid 1px;
-    box-shadow: 20px 8px 20px 10px;
-}
-.img--donate-below{
-    grid-area: imgtwo;
-    object-fit: contain;
-    max-height: 100%;
-    border: black solid 1px;
-    box-shadow: 20px 8px 20px 10px;
 }
 
-.donate--cta{
-    text-align: center;
-    grid-area: main;
-    background-color: rgb(255, 255, 255);
-    border: solid rgb(0, 0, 0) 1px;
-}
 
-#error{
+
+
+#error {
     color: red;
 }
 
 
-.donate--button{
-    border-radius: 5rem;
-    /* height: 3rem; */
-    height: 3rem;
-    width: 12rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    transition: transform 1s ease-in-out, box-shawdow 1s ease-in-out;
-    cursor: pointer;
-    margin: 4rem 0;
-    align-self: center;
-}
+
+
 button:hover {
     transform: scale(1.1);
-    box-shadow: 2px 2px 10px 3px ;
+    box-shadow: 2px 2px 10px 3px;
 }
 
 
-ul{
+ul {
     list-style: none;
 }
 
-.logo{
+.logo {
     height: 4rem;
     width: auto;
     transition: transform 0.5s ease-in-out;
@@ -150,4 +116,141 @@ ul{
 
 .logo:hover {
     transform: scale(1.6) rotate(360deg);
+
 }
+
+
+.logo--header {
+    background-image: url(logo.png);
+    grid-area: logo;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "logo header header header"
+        "img  img imgtwo imgtwo"
+        "main main main main";
+
+}
+
+
+.img--donate {
+    grid-area: img;
+    object-fit: contain;
+    max-width: 100%;
+    border: black solid 1px;
+}
+
+.img--donate-below {
+    grid-area: imgtwo;
+    object-fit: contain;
+    max-width: 100%;
+    border: black solid 1px;
+
+}
+
+.donate--cta {
+    font-size: 1rem;
+    text-align: center;
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(0, 0, 0) 1px;
+}
+
+.error {
+    color: red;
+}
+
+
+
+.donate--button {
+    border-radius: 5rem;
+    /* height: 3rem; */
+    height: 1rem;
+    width: 4rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: transform 1s ease-in-out, box-shawdow 1s ease-in-out;
+    cursor: pointer;
+    margin: .1rem 0;
+    align-self: center;
+}
+
+.donate--logo {
+    grid-area: logo;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+    .img--donate {
+        grid-area: img;
+        object-fit: contain;
+        max-width: 100%;
+        border: black solid 1px;
+        box-shadow: 20px 8px 20px 10px;
+    }
+
+    .img--donate-below {
+        grid-area: imgtwo;
+        object-fit: contain;
+        max-width: 100%;
+        border: black solid 1px;
+        box-shadow: 20px 8px 20px 10px;
+    }
+
+    .container {
+        display: grid;
+        padding: 10px;
+        margin: 25px;
+        gap: 1rem 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "logo header header header"
+            "main main img imgtwo"
+            ". . . .";
+    }
+
+
+    .donate--button {
+        border-radius: 5rem;
+        /* height: 3rem; */
+        height: 3rem;
+        width: 12rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        transition: transform 1s ease-in-out, box-shawdow 1s ease-in-out;
+        cursor: pointer;
+        margin: 4rem 0;
+        align-self: center;
+    }
+
+    .donate--cta {
+        text-align: center;
+        grid-area: main;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+/* html{
+        font-size: 35%;
+    } */
+
+/* Leads to changes to the base element Don't set the whole document font size to rem*/
+
+
+/* Thinking fast and slow
+Atomics habits
+*/

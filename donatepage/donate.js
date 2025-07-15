@@ -9,7 +9,6 @@ const expDate = document.getElementById('expDate')
 
 donateButton.addEventListener('click', function() { //When button is clicked it will show the value from the user input
     console.log(nameInput.value , cardInfo.value, donateAmount.value);
-    // alert()
 })
 
 form.addEventListener('submit', (e) => {        //Listens for when the form is submitted to cancel page from submittng
@@ -25,7 +24,7 @@ form.addEventListener('submit', (e) => {        //Listens for when the form is s
     if(expDate.value == 0){
             messages.push('Please Enter a valid date')
         }
-        
+
     if(donateAmount.value == 0) {
         messages.push('Please enter a amount above 0')
     }
@@ -39,9 +38,10 @@ form.addEventListener('submit', (e) => {        //Listens for when the form is s
 
     if (messages.length === 0) {
         e.preventDefault()
-        alert("Thank you for your contributions")
-        document.getElementById("form").reset(); 
-
+        alert("Thank you for your contributions of $" + donateAmount.value)
+        document.getElementById("form").reset();
+        errorText.innerText = ''
+        //Put in () when passing parameters into a funciton 
     }
 })
 
