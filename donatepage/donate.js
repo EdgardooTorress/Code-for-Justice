@@ -29,6 +29,13 @@ form.addEventListener('submit', (e) => {        //Listens for when the form is s
         e.preventDefault()
         errorText.innerText = messages.join(', ')
     }
+
+    if (messages.length === 0) {
+        e.preventDefault()
+        alert("Thank you for your contributions")
+        document.getElementById("form").reset(); 
+
+    }
 })
 
 // nameInput.addEventListener('click', function() {
