@@ -26,36 +26,41 @@
 <body>
     <main>
         <div class="container">
-            <h1 class="donate-here">Donate Here</h1>
-                <img src="/donatepage/cancerdonation.jpg" class="img--donate">
+            <h1 class="donate-here">Every Dollar Goes to a Patient in Need</h1>
+            <img src="doctor.webp" class="img--donate">
+            <img src="healthcare.webp" class="img--donate-below"/>
+            <img src="banner.jpg" class="donate-here"/>
             <article class="donate--cta">
-                <h1>Donate Here Test</h1>
+                <h1>Donate Here</h1>
                 <div>
                     <p>
                         Help us give back to the many people who are suffereing during their journey. 
-                        All funds are given to patients in regards to their hospital bills.
+                        All funds are given to patients in regards to their hospital bills. As a company
+                        we want to bring a sense of comfort within our community.
                     </p>
                 </div>
                 <div class="donation-info">
                 <div id="error"> </div>
                     <form action="/" method="get" id="form">
-                        <div class="donation-info">
+                        <div class="donation--info">
                                 <div>
-                                    <label">Name</label>
-                                    <input type="text" id="nameInput" name="name" placeholder="John Doe"/> 
+                                    <label">First Name</label>
+                                    <input type="text" id="nameInput" class="first-name" name="name" placeholder="John"/>
+                                    
+                                    <label">Last Name</label>
+                                    <input type="text" id="nameInput" name="name" class="last-name" placeholder="Doe"/>
                                 </div>
                                     <label>Card Information</label>
                                     <input type="tel" placeholder="Card Information" id="cardInfo"/>
-
-                                    <input type="number" placeholder="MM/YY" id="expDate"/>
+                                    <input type="date" placeholder="MM/YYYY" id="expDate"/>
                                 <div>
                                     <label>Amount</label>
                                     <input type="number" placeholder="1.00" id="donateAmount"/>
                                 </div>
                         </div>
-                        <button class="donate-button" id="donateButton">Donate</button>
-
+                        <button class="donate--button" id="donateButton">Donate</button>
                     </form>
+                </div>
             </article>
         </div>
     </main>
